@@ -6,7 +6,7 @@ Er werd vastgesteld dat deze meteen luistert naar alle netwerken en niet enkel n
 De website was meteen raadpleegbaar zowel binnen als buiten de VM.
 
 De nieuwe website in de Document Root zetten (met behulp van unzip commando). De website files werden via mail vanaf het fysiek systeem doorgestuurd naar de VM
-file:///home/osboxes/Pictures/Screenshot%20from%202022-03-22%2003-39-47.png![image](https://user-images.githubusercontent.com/92029627/160095506-2bd325c8-6f67-4de6-90c0-cde455d73466.png)
+(https://user-images.githubusercontent.com/92029627/160095506-2bd325c8-6f67-4de6-90c0-cde455d73466.png)
 
 Openssh installeren:
 file:///home/osboxes/Pictures/Screenshot%20from%202022-03-22%2003-40-04.png![image](https://user-images.githubusercontent.com/92029627/160095850-4586c39a-633c-42d2-9f52-fe1d28ec046b.png)
