@@ -2,7 +2,7 @@
 Hier is een overzicht van de verschillende stappen die genomen werden om een apache2 website online te zetten vanaf een Ubuntu Virtual Machine. Later wordt deze website beveiligd met https.
 
 Eerst werd apache2 geïnstalleerd. Na het installeren werd er gekeken op welke poort deze luistert met het commando "sudo ss -tlnp".
-Er werd vastgesteld dat deze meteen luistert naar alle netwerken en niet enkel naar de loopback-interface. De poort waarop deze luistert is namelijk *:80. Dit betekent dat apache2 naar alle netwerken luistert
+Er werd vastgesteld dat deze meteen luistert naar alle netwerken en niet enkel naar de loopback-interface. Het adres waarop deze luistert is namelijk *:80. Dit betekent dat apache2 naar alle netwerken luistert
 De website was meteen raadpleegbaar zowel binnen als buiten de VM.
 
 De nieuwe website in de Document Root zetten (met behulp van unzip commando). De website files werden via mail vanaf het fysiek systeem doorgestuurd naar de VM
