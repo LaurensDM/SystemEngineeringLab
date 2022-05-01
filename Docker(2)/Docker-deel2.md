@@ -6,6 +6,7 @@ We maken eerst een extra folder aan genaamd nextcloud om de docker-compose.yml i
 De docker-compose.yml wordt dan opgesteld.
 Voor de wachtwoorden worden omgevingsvariabelen gemaakt, wachtwoorden zouden namelijk niet in plain-text mogen staan.
 Hieronder de inhoud van het docker-compose.yml file.
+(Dit is het eindresultaat, verder in dit verslag worden de aanpassingen die werden gedaan beschreven)
 ```
 
 version: '2'
@@ -62,7 +63,7 @@ services:
     restart: unless-stopped
     
 ```
-Origineel was het de bedoeling om nextcloud op poort 8080 te zetten. Deze poort was echter al bezet door vaultwarden, dus is er gekozen voor poort 420.
+Origineel was het de bedoeling om nextcloud op poort 8080 te zetten. Deze poort was echter al bezet door vaultwarden, dus is er gekozen voor een andere poort.
 Met het commando `docker compose up -d` wordt het bestand uitgevoerd. Het duurt een tijdje vooraleer alles is opgestart
 
 ![voorbeeld opstarten nextcloud](images/download.png)
