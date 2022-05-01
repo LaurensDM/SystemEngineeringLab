@@ -78,6 +78,9 @@ Er werd nogmaals `docker compose up -d` en `docker compose logs --follow` uitgev
 
 Verder werd `docker ps` en `sudo ss -tlnp` uitgevoerd om na te kijken of de containers wel degelijk actief waren en op welke poort ze actief zijn.
 Vervolgens werd het adres localhost:420/ ingevoerd in een browser en kwam men op een nextcloud pagina.
+Na aanmaken van het account komt men op dit scherm terecht.
+
+![nextcloud page](images/nextcloud.png)
 
 ## Stap 2: Commando's uitvoeren in een container
 
