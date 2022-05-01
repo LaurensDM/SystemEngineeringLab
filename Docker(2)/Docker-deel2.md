@@ -73,9 +73,31 @@ Het volgende werd vastgesteld:
 ![errors in de logs](images/error.png)
 
 In het docker-compose.yml stonden functies die overbodig waren en voor errors zorgden, dus deze werden verwijdert uit de file.
-Er werd nogmaals `docker compose up -d` en docker compose logs --follow` uitgevoerd, geen errors meer op te merken.
+Er werd nogmaals `docker compose up -d` en `docker compose logs --follow` uitgevoerd, geen errors meer op te merken.
 
-## Stap2: Commando's uitvoeren in een container
+Verder werd `docker ps` en `sudo ss -tlnp` uitgevoerd om na te kijken of de containers wel degelijk actief waren en op welke poort ze actief zijn.
+Vervolgens werd het adres localhost:420/ ingevoerd in een browser en kwam men op een nextcloud pagina.
+
+## Stap 2: Commando's uitvoeren in een container
+
+Er wordt getest ofdat de redis container wel degelijk werkt.
+
+Om dit te bereiken werd `docker exec -ti [NAAM_REDIS_CONTAINER] sh` uitgevoerd. In dit geval was de naam van de container simpelweg 'redis'.
+Hierdoor wordt een shell gestart in de redis container.
+Na invoeren van `redis-cli MONITOR` in de shell refresht men de nextcloud pagina in de browser.
+Dit is het resultaat dat men bekomt bij het refreshen
+
+![resultaat shell comando's](images/shell.png)
+
+## Stap 3: Environment variables
+
+De gebruikte variabelen worden in een .env bestand gestoken.
+
+In Stap 1 werd er reeds een map genaamd nextcloud aangemaakt. Deze map bevat enkle de docker-compose.yml.
+Nu wordt er nog een extra bestand, .env aangemaakt in de map.
+Dit bestand zal de variabelen bevatten die gebruikt worden in de docker-compose.yml.
+Aangezien zowel de docker-compose.yml en de .env file in dezelfde map zitten, hoeft de docker-compose.yml niet aangepast te worden met een verwijzing naar de .env.
+docker-compose.yml zal automatisch de variabelen die in het .env bestand staan inlezen.
 
 
 
