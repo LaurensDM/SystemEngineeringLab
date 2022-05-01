@@ -65,12 +65,12 @@ services:
 Origineel was het de bedoeling om nextcloud op poort 8080 te zetten. Deze poort was echter al bezet door vaultwarden, dus is er gekozen voor poort 420.
 Met het commando `docker compose up -d` wordt het bestand uitgevoerd. Het duurt een tijdje vooraleer alles is opgestart
 
-![voorbeeld opstarten nextcloud](file:///home/osboxes/Pictures/Screenshot%20from%202022-05-01%2007-03-44.png)
+![voorbeeld opstarten nextcloud](images/download.png)
 
 Nadat het opstarten voltooid is wordt gecontroleerd of alles goed is verlopen met `docker compose logs --follow`
 Het volgende werd vastgesteld:
 
-![errors in de logs](file:///home/osboxes/Pictures/Screenshot%20from%202022-05-01%2007-03-59.png)
+![errors in de logs](images/error.png)
 
 In het docker-compose.yml stonden functies die overbodig waren en voor errors zorgden, dus deze werden verwijdert uit de file.
 Er werd nogmaals `docker compose up -d` en docker compose logs --follow` uitgevoerd, geen errors meer op te merken.
