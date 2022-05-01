@@ -38,7 +38,7 @@ services:
     image: nextcloud
     restart: unless-stopped
     ports:
-      - 420:80
+      - ${port}
     links:
       - db
     volumes:
