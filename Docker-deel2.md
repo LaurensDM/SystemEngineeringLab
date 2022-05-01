@@ -61,7 +61,7 @@ services:
       - nextcloud_network
     restart: unless-stopped
     
-    ```
+```
 Origineel was het de bedoeling om nextcloud op poort 8080 te zetten. Deze poort was echter al bezet door vaultwarden, dus is er gekozen voor poort 420.
 Met het commando `docker compose up -d` wordt het bestand uitgevoerd. Het duurt een tijdje vooraleer alles is opgestart
 
