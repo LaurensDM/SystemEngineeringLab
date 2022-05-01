@@ -93,8 +93,8 @@ Dit is het resultaat dat men bekomt bij het refreshen
 
 De gebruikte variabelen worden in een .env bestand gestoken.
 
-In Stap 1 werd er reeds een map genaamd nextcloud aangemaakt. Deze map bevat enkle de docker-compose.yml.
-Nu wordt er nog een extra bestand, .env aangemaakt in de map.
+In Stap 1 werd er reeds een map genaamd nextcloud aangemaakt. Deze map bevat enkel de docker-compose.yml.
+Nu wordt er nog een extra bestand, .env aangemaakt in deze map.
 Dit bestand zal de variabelen bevatten die gebruikt worden in de docker-compose.yml.
 Aangezien zowel de docker-compose.yml en de .env file in dezelfde map zitten, hoeft de docker-compose.yml niet aangepast te worden met een verwijzing naar de .env.
 docker-compose.yml zal automatisch de variabelen die in het .env bestand staan inlezen.
